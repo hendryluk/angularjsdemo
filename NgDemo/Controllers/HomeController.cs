@@ -13,7 +13,7 @@ namespace NgDemo.Controllers
         public ActionResult BeerPrice()
         {
 
-            return Json(new {MarketPrice= new Random().Next(200)}, JsonRequestBehavior.AllowGet)};
+            return Json(new {MarketPrice= new Random().Next(200)}, JsonRequestBehavior.AllowGet);
         }
     }
 }

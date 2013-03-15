@@ -1,5 +1,4 @@
-﻿///<reference path="../angular-mocks.js"/>
-///<reference path="../Apps/BeerController.js"/>
+﻿///<reference path="../Apps/BeerController.js"/>
 describe("Beer controller", function() {
     it("Can shout", function() {
         var $scope = {};

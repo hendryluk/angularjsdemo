@@ -2,7 +2,7 @@
     Layout = null;
 }
 
-<html>
+<html ng-app>
     <head>
         <title>Angular Demo</title>
         @Scripts.Render("~/Scripts/angular.js")
@@ -10,8 +10,9 @@
 
         @Scripts.Render("~/Bundles/Apps")    
     </head>
-    <body>
-        <input type="text" placeholder="Type something"/>
-        
+    <body ng-controller="BeerController">
+        <input type="text" placeholder="Type something" ng-model="message"/>
+        Count: {{message.length}}
+        <button ng-click="shout()">SHOUT</button>
     </body>
 </html>

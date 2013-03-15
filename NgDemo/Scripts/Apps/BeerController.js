@@ -4,13 +4,13 @@
         .when('/hello/:msg', { templateUrl: "/Scripts/Templates/hello.html", controller: BeerController })
         .otherwise({redirectTo: "/hello/Waddup"});
 })
-//    .directive("datepicker", function () {
-//    return {
-//        link: function($scope, element) {
-//            element.datepicker();
-//        }
-//    };
-//})
+    .directive("datepicker", function () {
+    return {
+        link: function($scope, element) {
+            element.datepicker();
+        }
+    };
+})
     .directive("alert", function() {
         return {
             restrict:"E",

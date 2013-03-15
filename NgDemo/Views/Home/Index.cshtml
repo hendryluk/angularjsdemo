@@ -2,7 +2,7 @@
     Layout = null;
 }
 
-<html ng-app>
+<html ng-app="presso">
     <head>
         <title>Angular Demo</title>
         @Scripts.Render("~/Scripts/angular.js")
@@ -10,10 +10,8 @@
 
         @Scripts.Render("~/Bundles/Apps")    
     </head>
-    <body ng-controller="BeerController">
-        <input type="text" placeholder="Type something" ng-model="message"/>
-        Count: {{message.length}}
-        <button ng-click="shout()">SHOUT</button>
-        <button ng-click="beerPrice()">Price</button>
+    <body>
+        <h1>Welcome!!!</h1>
+        <div ng-view></div>
     </body>
 </html>

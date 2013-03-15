@@ -1,9 +1,9 @@
 ﻿///<reference path="../angular-mocks.js"/>
 ///<reference path="../Apps/BeerController.js"/>
-describe("Beer controller", function() {
+describe("Beer controller", function () {
     it("Can shout", function() {
         var $scope = {};
-        BeerController($scope);
+        BeerController($scope, null, {});
 
         $scope.message = "sheep";
         $scope.shout();
@@ -16,7 +16,7 @@ describe("Beer controller", function() {
             _$httpBackend_.expectGET("/Home/BeerPrice").respond({ MarketPrice: 50 });
 
             var $scope = {};
-            BeerController($scope, $http);
+            BeerController($scope, $http, {});
 
             $scope.beerPrice();
             
